@@ -1,0 +1,109 @@
+body{
+    box-sizing: border-box;
+    top:0;
+    bottom: 0;
+
+}
+#navigation{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    background-color: beige;
+    border: 3px solid beige;
+    border-radius: 20px;
+    margin-bottom: 15px;
+
+}
+
+#navigation li{
+    display:inline-flex;
+    margin: 4px 24px 4px 24px;
+    list-style-type: none;
+    justify-items: flex-end;
+    align-content: flex-end;
+    text-align: right;
+    color: dimgrey;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Nunito",sans-serif;
+
+}
+
+#particle-js{
+    background-color: orange;
+    display: flex;
+    align-content: flex-start;
+    justify-items: left;
+    flex-direction: row;
+    border: 2px solid beige;
+    border-radius: 20px;
+    margin-bottom: 15px;
+
+}
+
+#about-me,#skills, #portfolio, #my-offers,#interests, #education, #certification{
+    display: block;
+    margin: auto;
+    justify-items: center;
+    align-content: center;
+
+}
+
+.header1{
+    color: whitesmoke;
+    padding: 18px 18px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left:20px;
+    margin-right:20px;
+
+}
+/*header2*/
+.header2{
+    color: antiquewhite;
+    padding: 24px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left:20px;
+    margin-right:20px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: beige;
+    border: 3px solid beige;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+footer  li{
+    display:inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: dimgrey;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Nunito",sans-serif;
+    padding: 2px 6px 2px 4px;
+}
+footer ul li i {
+    padding: 4px 4px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
