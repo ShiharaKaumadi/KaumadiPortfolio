@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Kaumadi</title>
     <!--font-awesome library-->
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -21,36 +22,303 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
-    <!--Animate CSS-->
+    <!--Pacifico Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   <!--Animate CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     <!--Animate on Scroll CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          rel="stylesheet">
     <!--Style sheet-->
-    <link href="style.css" rel="stylesheet">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 <nav id="navigation">
     <ul>
-        <li>My Self</li>
+        <li>About Me</li>
         <li>Skills</li>
         <li>My Offers</li>
         <li>Portfolio</li>
         <li>Education</li>
+        <li>Certifications</li>
         <li>Interests</li>
     </ul>
 </nav>
+
 <section id="particle-js">
     <div id="content">
-
         <div id="about-me">
-            <h1 class="header1">My Self</h1>
+            <h1 class="header0">Kaumadi's <span>Portfolio</span></h1>
+            <div class="card">
+                <p class="card-text">
+                <h1 class="header1">About Me</h1>
+                    Hi! I'm Kaumadi Bandara, a passionate software engineer. I enjoy constantly learning programming and
+                    improving my skills along the way through online tutorials, videos, interactions with software
+                    professionals, and discussions with my friends. I love to create pet projects and user-friendly
+                    software solutions for real-world applications. 
+                </p>
+            </div>
         </div>
-        <div id="skills">
+        <section id="skills" class="skills">
             <h1 class="header1">Skills</h1>
-        </div>
+            <div class="tech-stack">
+                <div class="box active" >
+                    <figure  style="--i:1">
+                        <img alt="java" class="img-fluid img-box active"
+                                 src="assets/images/java.png"  data-id="skill-1" style="--i:1;">
+                        <figcaption>Java</figcaption>
+                    </figure>
+
+                    <figure style="--i:2">
+                        <img alt="mysql" class="img-fluid "  src="assets/images/mysql.png"  data-id="skill-2" style="&#45;&#45;i:2;">
+                        <figcaption>MySQL</figcaption>
+                    </figure>
+
+                    <figure style="--i:3" ><img alt="figma" class="img-fluid"  src="assets/images/figma.png" data-id="skill-3" style="&#45;&#45;i:3;">
+                        <figcaption>Figma</figcaption>
+                    </figure>
+
+                    <figure style="--i:4" ><img alt="html" class="img-fluid"  src="assets/images/html.png"   data-id="skill-4" style="&#45;&#45;i:4;"
+                                 >
+                        <figcaption>HTML</figcaption>
+                    </figure>
+
+                    <figure style="--i:5" ><img alt="css" class="img-fluid" src="assets/images/css.png"   data-id="skill-5" style="&#45;&#45;i:5;">
+                        <figcaption>CSS</figcaption>
+                    </figure>
+
+                    <figure style="--i:6" ><img alt="js" class="img-fluid"  src="assets/images/js.png"   data-id="skill-6" style="&#45;&#45;i:6;">
+                        <figcaption>JS</figcaption>
+                    </figure>
+
+                    <figure style="--i:7" ><img alt="bootstrap" class="img-fluid" src="assets/images/bootstrap.png"   data-id="skill-7" style="&#45;&#45;i:7;">
+                        <figcaption>Bootstrap</figcaption>
+                    </figure>
+
+                    <figure style="--i:8" ><img alt="typescript" class="img-fluid" src="assets/images/typescript.png"  data-id="skill-8" style="&#45;&#45;i:8;">
+                        <figcaption>Typescript</figcaption>
+                    </figure>
+
+                    <figure style="--i:9" ><img alt="tailwind-css" class="img-fluid" src="assets/images/tailwind-css.png"  data-id="skill-9" style="&#45;&#45;i:9;">
+                        <figcaption>Tailwind css</figcaption>
+                    </figure>
+
+                    <figure style="--i:10" ><img alt="node js" class="img-fluid"  src="assets/images/nodejs.png" data-id="skill-10" style="&#45;&#45;i:10;">
+                        <figcaption>Node JS</figcaption>
+                    </figure>
+
+                    <figure style="--i:11"><img alt="spring" class="img-fluid"
+                                 src="assets/images/spring-framework.png" data-id="skill-11" style="&#45;&#45;i:11;">
+                        <figcaption>Spring</figcaption>
+                    </figure>
+                    <figure style="--i:12"><img alt="spring boot" class="img-fluid"
+                                 src="assets/images/spring-boot.png" data-id="skill-12" style="&#45;&#45;i:12;">
+                        <figcaption>SpringBoot</figcaption>
+                    </figure>
+
+                    <figure style="--i:13"><img alt="react" class="img-fluid" src="assets/images/react.png" data-id="skill-13" style="&#45;&#45;i:13;">
+                        <figcaption>React</figcaption>
+                    </figure>
+
+                    <figure style="--i:14"><img alt="express js" class="img-fluid"  src="assets/images/expressjs.png" data-id="skill-14" style="&#45;&#45;i:14;">
+                        <figcaption>ExpressJS</figcaption>
+                    </figure>
+
+                    <figure style="--i:15">
+                        <img alt="next js" class="img-fluid" src="assets/images/nextjs.png" data-id="skill-15" style="&#45;&#45;i:15;">
+                        <figcaption>Next JS</figcaption>
+                    </figure>
+
+                    <figure style="--i:16"><img alt="mongo db" class="img-fluid"  src="assets/images/mongodb.png" data-id="skill-16" style="&#45;&#45;i:16;">
+                        <figcaption>MongoDB</figcaption>
+                    </figure>
+
+                    <figure style="--i:17"><img alt="hibernate Framework" class="img-fluid" src="assets/images/hibernate-framework.png"  data-id="skill-17" style="&#45;&#45;i:17;">
+                        <figcaption>Hibernate</figcaption>
+                    </figure>
+                </div>
+                <div class="content-skill">
+                    <div class="contentBx active" id="cnt1">
+                        <div class="card">
+                            <div class="box">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt2">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt3">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt4">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentBx active" id="cnt5">
+                        <div class="card">
+                            <div class="box">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt6">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt7">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt8">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentBx active" id="cnt9">
+                        <div class="card">
+                            <div class="box">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt10">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt11">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt12">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentBx active" id="cnt13">
+                        <div class="card">
+                            <div class="box">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt14">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt15">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt16">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skill">
+                        <div class="contentBx" id="cnt17">
+                            <div class="card">
+                                <div class="box">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div id="my-offers">
             <h1 class="header1">My Offers</h1>
-            <div class="show-offer"></div>
+            <div class="offers">
+                <div class="card">Web Application Development</div>
+                <div class="card">Enterprise Level Application Development</div>
+                <div class="card">UI/ UX Designing with Figma</div>
+                <div class="card">Writing Project Ideas, Articles</div>
+            </div>
         </div>
         <div id="portfolio">
             <h1 class="header1">Portfolio</h1>
@@ -68,7 +336,7 @@
             </div>
             <div id="web-project">
                 <h2 class="header2">Web Projects</h2>
-                <ul>
+                <!--<ul>
                     <li>All I Know About CSS</li>
                     <li>To Do List</li>
                     <li>All I Know About JS</li>
@@ -82,44 +350,44 @@
                     <li>Angular To do list</li>
                     <li>Next js Interview Task</li>
                     <li>MERN Interview Task</li>
-                </ul>
+                </ul>-->
             </div>
             <div id="spring-project">
                 <h2 class="header2">Spring Web MVC</h2>
-                <ul>
+            <!--    <ul>
                     <li>Travel Management System</li>
                     <li>Hotel Reservation System</li>
                     <li>ECommerce Website with Spring</li>
-                </ul>
+                </ul>-->
             </div>
             <div id="flutter-project">
                 <h2 class="header2">Flutter</h2>
-                <ul>
+             <!--   <ul>
                     <li>To Do List</li>
                     <li>Chat App</li>
-                </ul>
+                </ul>-->
             </div>
             <div id="spring-boot">
-                <h2 class="header2">Spring Boot</h2>
+         <!--       <h2 class="header2">Spring Boot</h2>
                 <ul>
                     <li>Travel Management System (Spring Boot)</li>
                     <li>Hotel Reservation System (Spring Boot)</li>
                     <li>ECommerce Website with Spring Boot</li>
-                </ul>
+                </ul>-->
             </div>
             <div id="react-native">
                 <h2 class="header2">React Native</h2>
-                <ul>
+              <!--  <ul>
                     <li>Beginner Project</li>
-                </ul>
+                </ul>-->
             </div>
             <div id="my-articles">
                 <h2 class="header2">My Articles</h2>
-                <ul>
+               <!-- <ul>
                     <li>Article 1</li>
                     <li>Article 2</li>
                     <li>Article 3</li>
-                </ul>
+                </ul>-->
             </div>
         </div>
         <div id="education">
@@ -131,16 +399,19 @@
                 <li>G.C.E O/L</li>
             </ul>
         </div>
+
+        <div id="certification">
+            <h1 class="header1">My Certifications</h1>
+            <div class="certification">
+            </div>
+        </div>
         <div id="interests">
             <h1 class="header1">My Interests</h1>
             <div id="my-routine"></div>
         </div>
-        <div id="certification">
-            <h1 class="header1">My Certifications</h1>
-        </div>
     </div>
 </section>
-<footer>
+<footer id="foot-note">
     <ul>
         <li><i class="fa-brands fa-square-whatsapp"></i>0711948806</li>
         <li><i class="fa-solid fa-square-envelope"></i>eshani9544@gmail.com</li>
@@ -151,13 +422,11 @@
     <div>
         <p id="copyright">©Shihara Kaumadi 2024.</p>
     </div>
-
-
 </footer>
 <!--You have to run this on live server-->
 <!--npm install -g live-server-->
 <!--live-server-->
-
+<script src="particles.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/browser.min.js"></script>
@@ -166,7 +435,7 @@
 <script src="js/main.js"></script>
 <script>
     particlesJS.load(
-        'space', 'particles.json', function () {
+        'particle-js', 'particles.json', function () {
             console.log("...");
             console.log("particle js loaded");
         }
@@ -177,6 +446,12 @@
 <!--Initialize AOS-->
 <script>
     AOS.init();
+</script>
+<!--bootstrap-->
+<script crossorigin="anonymous"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+
 </script>
 </body>
 </html>

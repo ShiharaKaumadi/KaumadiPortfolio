@@ -1,102 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body{
-    top: 0;
-    bottom: 0;
+    top:0;
+    bottom:0;
     box-sizing: border-box;
-    background-color: #494848;
-    height:3800px;
+    background-color: transparent;
 }
 
 #navigation{
+    height:10vh;
+    background-color: #ffc720;
+    width:100%;
+    top:0;
     position: fixed;
-    align-content: space-evenly;
-    padding: 10px 10px;
-    background-color: whitesmoke;
-    border-bottom: 3px solid #DDDDDD;
-    width: 99vw;
     z-index: 999;
+    place-content: center;
 }
 
-#navigation li{
-    display:inline-flex;
-    margin: 4px 12px 4px 24px;
-    list-style-type: none;
+#navigation ul{
     float: right;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: dimgrey;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Nunito",sans-serif;
+}
 
+#navigation ul li{
+    color: black;
+    font-size:20px ;
+    font-weight: bold;
+    font-family: "Nunito", Verdana, sans-serif;
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    padding: 20px 20px;
+    justify-items: center;
+    align-content: center;
+    cursor: pointer;
 }
 
 #particle-js{
-    background-color: #494848;
-    border-radius: 20px;
-    margin:auto;
+    top:10vh;
+    background-color: #162533;
     position: relative;
-    display: flex;
-
+    margin: auto;
+    width: 100%;
 }
-
 
 #content{
     background-color: transparent;
-    opacity:0.85;
-  /*  position: absolute;*/
-    padding:10px;
-    place-items: center;
-    place-content: center;
-    margin:100px 80px 60px 100px;
-    width: 80vw;
-    border-radius: 20px;
+
 
 }
 
-#about-me,.skills, #my-offers, #portfolio,#interests, #education, #certification{
-    display: inline;
-    margin: auto;
-    justify-items: center;
-    align-content: center;
-
+.header0{
+    font-size:98px ;
+    color: white;
+    letter-spacing: 8px;
+    font-family: "Pacifico", cursive, sans-serif;
+    padding: 50px 30px;
+    background-color: transparent;
 }
 
-#about-me .card{
-    width: 60%;
-    display: flex;
-    margin: 20px 20px;
-    align-content: flex-start;
-    justify-content: start;
-    padding: 35px 35px;
-    line-height: 35px;
-    text-align: justify;
-    /*background-color:#EEF0E5;*/
-    background-color: black;
-    opacity: 1;
-    border: 1px solid white ;
-    border-radius:12px;
-    color: cornsilk;
-    font-size:20px;
-    font-family: "Tilt Neon", Verdana, sans-serif;
-
-}
-
-.header1{
-    color: black;
-    padding: 18px 18px;
-    font-size: 48px;
+#about-me .header1, #skills .header1, #my-offers .header1, #portfolio .header1, #education .header1, #interests .header1, #certification .header1{
+    font-size: 48px ;
+    color: white;
     font-weight: bold;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top: 20px;
-    font-family: "Tilt Neon", Verdana,sans-serif;
-
+    font-family: "Tilt Neon", Verdana, sans-serif;
+    padding: 50px 30px;
 }
-/*header2*/
+
 .header2{
     color: dimgrey;
     padding: 24px 24px;
@@ -106,24 +78,28 @@ body{
     margin-right:20px;
     margin-top: 20px;
     font-family: "Tilt Neon", Verdana,sans-serif;
+    cursor:pointer;
+}
+
+#about-me .card{
+    display: flex;
+    margin: auto 30px;
+    width:50%;
+    /*justify-items: left;*/
+    align-content: center;
+    color: white;
+    border: 2px solid transparent;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: "Poppins", Verdana, sans-serif;
+    text-align: justify;
 }
 
 .skills .tech-stack{
-    /*align-items: flex-start;
-    flex-direction: row;
-    display: inline-flex;
-    margin: 20px 20px;
-    border: 3px solid #ffffff;
-    background-color: #EEF0E5;
-    opacity:1;
-    padding: 35px 35px;
-    border-radius: 20px;
-    z-index: 1;*/
     position: relative;
     width:600px;
     height:600px;
-    border: 8px solid #c0d7ee;
-    background-color: white;
+    background-color: transparent;
     justify-items: center;
     align-content: center;
     border-radius:30%;
@@ -147,18 +123,6 @@ body{
 }
 
 .skills .tech-stack .box figure{
-   /* width: 90px;
-    height:90px;
-    padding: 2px 2px;
-    margin: 9px 9px;
-    display: inline-flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    justify-items: center;
-    border : 2px solid dimgrey;
-    border-radius: 8px;
-    z-index: 12;
-    text-align: center;*/
     position: absolute;
     width: 85px;
     height:85px;
@@ -192,10 +156,10 @@ body{
     align-content: center;
 }
 
-
 .tech-stack .box figure.active img{
     filter: grayscale(0);
 }
+
 .tech-stack .box figure.active{
     box-shadow: 0 0 0 2px #151414, 0 0 0 2px #259be5;
 }
@@ -222,6 +186,7 @@ body{
     z-index: 3;
     pointer-events: none;
 }
+
 .content-skill::after{
     content:'';
     position:absolute;
@@ -244,6 +209,7 @@ body{
         rotate: 360deg;
     }
 }
+
 @keyframes animate_02 {
     0%{
         rotate: 360deg;
@@ -253,10 +219,11 @@ body{
         rotate: 0deg;
     }
 }
+
 @keyframes animate_03 {
     0%{
-    rotate:0deg;
-     }
+        rotate:0deg;
+    }
     20%{
         rotate:60deg;
     }
@@ -273,6 +240,7 @@ body{
         rotate:360deg;
     }
 }
+
 @keyframes animate_04 {
     0%{
         rotate:360deg;
@@ -294,60 +262,67 @@ body{
     }
 }
 
-
-
-#my-offers .card{
-    width: 300px;
-    height: 250px;
+.offers{
     display: flex;
-    padding: 24px 24px;
-    align-content: center;
+}
+
+.offers .card{
+    display: flex;
+    width:300px;
+    height:250px;
+    margin: auto;
     justify-items: center;
+    align-content: center;
     text-align: center;
-    background-color:#EEF0E5;
-    opacity: 1;
-    border: 1px solid white ;
-    border-radius:12px;
     color: black;
     font-weight: bold;
-    font-size:25px;
-    font-family: "Tilt Neon", Verdana, sans-serif;
-
-}
-
-
-
-footer{
-    display: block;
-    flex-direction: column;
-   margin: auto;
     background-color: whitesmoke;
-    border: 3px solid whitesmoke;
-    text-align: center;
+    place-content: center;
+    place-items: center;
+    font-size: 24px;
+    font-family: "Nunito", Verdana, sans-serif;
 
 }
 
-
-footer  li{
-    display:inline-flex;
-    flex-direction: row;
-    list-style-type: none;
-    color: dimgrey;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Nunito",sans-serif;
-    padding: 2px 6px 2px 4px;
-}
-footer ul li i {
-    padding: 4px 4px;
+.offers .card:hover{
+    rotate: 15deg;
+    border:4px solid gainsboro;
 }
 
-footer div{
+#foot-note{
+    height:30vh;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-color: #ffc720;
+    z-index: 999;
+    place-content: center;
+    margin: 20px 0 0 0;
+    padding: 20px 10px 10px 10px;
+    place-items: center;
+}
+
+#foot-note ul{
+display: flex;
+
+}
+#foot-note ul li i{
+    padding: 0 15px;
+}
+
+#foot-note ul li{
+    cursor: pointer;
+}
+
+#foot-note ul li, #copyright{
     display: flex;
-    flex-direction: row;
+    color: black;
+    font-size:18px ;
+    list-style-type: none;
     margin: auto;
+    justify-items: center;
     align-content: center;
-    justify-content: center;
-    text-align: center;
-}
+    place-content: center;
+    place-items: center;
 
+}
