@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -23,10 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
     <!--Pacifico Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-   <!--Animate CSS-->
+    <!--Animate CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     <!--Animate on Scroll CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -37,395 +37,537 @@
           rel="stylesheet">
     <!--Style sheet-->
     <!--<link href="style.css" rel="stylesheet">-->
-    <link href="styles.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav id="navigation">
-    <ul>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>My Offers</li>
-        <li>Portfolio</li>
-        <li>Education</li>
-        <li>Certifications</li>
-        <li>Interests</li>
+<header class="header" id="header">
+    <i class="fa-solid fa-bars" id="menu-icon" style="color: white;font-size: 18px;"></i>
+    <ul class="navbar" id="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#offers">My Offers</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#education">Education</a></li>
     </ul>
-</nav>
+</header>
 
-<section id="particle-js">
-    <div id="content">
-        <div id="about-me">
-            <h1 class="header0">Kaumadi's <span>Portfolio</span></h1>
-            <div class="card">
-                <p class="card-text">
-                <h1 class="header1">About Me</h1>
-                    Hi! I'm Kaumadi Bandara, a passionate software engineer. I enjoy constantly learning programming and
-                    improving my skills along the way through online tutorials, videos, interactions with software
-                    professionals, and discussions with my friends. I love to create pet projects and user-friendly
-                    software solutions for real-world applications. 
-                </p>
-            </div>
+<section class="home" id="home">
+    <div class="home-text">
+        <h1 class="animate__animated animate__bounce">Shihara's Portfolio</h1>
+        <h2>Software Engineer</h2>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-text">
+        <h1 data-aos="fade-down">About Me</h1>
+        <p>Hi! I'm Shihara Kaumadi, a passionate software engineer.</p>
+        <p>I enjoy constantly learning programming and
+            improving my skills along the way through online tutorials, videos, interactions with software
+            professionals, and discussions with my friends.</p>
+        <p> I love to create pet projects and user-friendly
+            software solutions for real-world applications.</p>
+    </div>
+    <div class="about-image">
+        <img alt="me" class="me img-fluid" data-aos="flip-left" src="assets/image/about_me.png" srcset="">
+    </div>
+</section>
+<section class="skills" id="skills">
+    <div class="skills-text">
+        <h1 class="heading" data-aos="fade-down">Skills</h1>
+    </div>
+    <div class="tech-stack">
+
+        <div class="fig-box">
+            <figure style="--i:1">
+                <img alt="java" class="img-fluid img-box active"
+                     data-id="skill-1" src="assets/image/java.png" style="--i:1;">
+                <figcaption>Java</figcaption>
+            </figure>
         </div>
-        <section id="skills" class="skills">
-            <h1 class="header1">Skills</h1>
-            <div class="tech-stack">
-                <div class="box active" >
-                    <figure  style="--i:1">
-                        <img alt="java" class="img-fluid img-box active"
-                                 src="assets/images/java.png"  data-id="skill-1" style="--i:1;">
-                        <figcaption>Java</figcaption>
-                    </figure>
-
-                    <figure style="--i:2">
-                        <img alt="mysql" class="img-fluid "  src="assets/images/mysql.png"  data-id="skill-2" style="&#45;&#45;i:2;">
-                        <figcaption>MySQL</figcaption>
-                    </figure>
-
-                    <figure style="--i:3" ><img alt="figma" class="img-fluid"  src="assets/images/figma.png" data-id="skill-3" style="&#45;&#45;i:3;">
-                        <figcaption>Figma</figcaption>
-                    </figure>
-
-                    <figure style="--i:4" ><img alt="html" class="img-fluid"  src="assets/images/html.png"   data-id="skill-4" style="&#45;&#45;i:4;"
-                                 >
-                        <figcaption>HTML</figcaption>
-                    </figure>
-
-                    <figure style="--i:5" ><img alt="css" class="img-fluid" src="assets/images/css.png"   data-id="skill-5" style="&#45;&#45;i:5;">
-                        <figcaption>CSS</figcaption>
-                    </figure>
-
-                    <figure style="--i:6" ><img alt="js" class="img-fluid"  src="assets/images/js.png"   data-id="skill-6" style="&#45;&#45;i:6;">
-                        <figcaption>JS</figcaption>
-                    </figure>
-
-                    <figure style="--i:7" ><img alt="bootstrap" class="img-fluid" src="assets/images/bootstrap.png"   data-id="skill-7" style="&#45;&#45;i:7;">
-                        <figcaption>Bootstrap</figcaption>
-                    </figure>
-
-                    <figure style="--i:8" ><img alt="typescript" class="img-fluid" src="assets/images/typescript.png"  data-id="skill-8" style="&#45;&#45;i:8;">
-                        <figcaption>Typescript</figcaption>
-                    </figure>
-
-                    <figure style="--i:9" ><img alt="tailwind-css" class="img-fluid" src="assets/images/tailwind-css.png"  data-id="skill-9" style="&#45;&#45;i:9;">
-                        <figcaption>Tailwind css</figcaption>
-                    </figure>
-
-                    <figure style="--i:10" ><img alt="node js" class="img-fluid"  src="assets/images/nodejs.png" data-id="skill-10" style="&#45;&#45;i:10;">
-                        <figcaption>Node JS</figcaption>
-                    </figure>
-
-                    <figure style="--i:11"><img alt="spring" class="img-fluid"
-                                 src="assets/images/spring-framework.png" data-id="skill-11" style="&#45;&#45;i:11;">
-                        <figcaption>Spring</figcaption>
-                    </figure>
-                    <figure style="--i:12"><img alt="spring boot" class="img-fluid"
-                                 src="assets/images/spring-boot.png" data-id="skill-12" style="&#45;&#45;i:12;">
-                        <figcaption>SpringBoot</figcaption>
-                    </figure>
-
-                    <figure style="--i:13"><img alt="react" class="img-fluid" src="assets/images/react.png" data-id="skill-13" style="&#45;&#45;i:13;">
-                        <figcaption>React</figcaption>
-                    </figure>
-
-                    <figure style="--i:14"><img alt="express js" class="img-fluid"  src="assets/images/expressjs.png" data-id="skill-14" style="&#45;&#45;i:14;">
-                        <figcaption>ExpressJS</figcaption>
-                    </figure>
-
-                    <figure style="--i:15">
-                        <img alt="next js" class="img-fluid" src="assets/images/nextjs.png" data-id="skill-15" style="&#45;&#45;i:15;">
-                        <figcaption>Next JS</figcaption>
-                    </figure>
-
-                    <figure style="--i:16"><img alt="mongo db" class="img-fluid"  src="assets/images/mongodb.png" data-id="skill-16" style="&#45;&#45;i:16;">
-                        <figcaption>MongoDB</figcaption>
-                    </figure>
-
-                    <figure style="--i:17"><img alt="hibernate Framework" class="img-fluid" src="assets/images/hibernate-framework.png"  data-id="skill-17" style="&#45;&#45;i:17;">
-                        <figcaption>Hibernate</figcaption>
-                    </figure>
-                </div>
-                <div class="content-skill">
-                    <div class="contentBx active" id="cnt1">
-                        <div class="card">
-                            <div class="box">
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt2">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt3">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt4">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contentBx active" id="cnt5">
-                        <div class="card">
-                            <div class="box">
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt6">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt7">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt8">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contentBx active" id="cnt9">
-                        <div class="card">
-                            <div class="box">
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt10">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt11">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt12">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contentBx active" id="cnt13">
-                        <div class="card">
-                            <div class="box">
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt14">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt15">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt16">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-skill">
-                        <div class="contentBx" id="cnt17">
-                            <div class="card">
-                                <div class="box">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="my-offers">
-            <h1 class="header1">My Offers</h1>
-            <div class="offers">
-                <div class="card">Web Application Development</div>
-                <div class="card">Enterprise Level Application Development</div>
-                <div class="card">UI/ UX Designing with Figma</div>
-                <div class="card">Writing Project Ideas, Articles</div>
-            </div>
+        <div class="fig-box">
+            <figure style="--i:2">
+                <img alt="mysql" class="img-fluid " data-id="skill-2" src="assets/image/mysql.png" style="--i:2;">
+                <figcaption>MySQL</figcaption>
+            </figure>
         </div>
-        <div id="portfolio">
-            <h1 class="header1">Portfolio</h1>
-            <div id="fx-project">
-                <h2 class="header2">Java FX projects</h2>
-            </div>
-            <div id="figma">
-                <h2 class="header2">UI/ UX</h2>
-            </div>
-            <div id="hibernate-project">
-                <h2 class="header2">Hibernate</h2>
-            </div>
-            <div id="Socket-programming">
-                <h2 class="header2">Socket Programming</h2>
-            </div>
-            <div id="web-project">
-                <h2 class="header2">Web Projects</h2>
-                <!--<ul>
-                    <li>All I Know About CSS</li>
-                    <li>To Do List</li>
-                    <li>All I Know About JS</li>
-                    <li>Particle JS</li>
-                    <li>My portfolio</li>
-                    <li>Web MVC project</li>
-                    <li>All I Know About TypeScript</li>
-                    <li>All I Know About React JS</li>
-                    <li>React JS Coffee Shop Website</li>
-                    <li>React JS Hotel Reservation Website</li>
-                    <li>Angular To do list</li>
-                    <li>Next js Interview Task</li>
-                    <li>MERN Interview Task</li>
-                </ul>-->
-            </div>
-            <div id="spring-project">
-                <h2 class="header2">Spring Web MVC</h2>
-            <!--    <ul>
-                    <li>Travel Management System</li>
-                    <li>Hotel Reservation System</li>
-                    <li>ECommerce Website with Spring</li>
-                </ul>-->
-            </div>
-            <div id="flutter-project">
-                <h2 class="header2">Flutter</h2>
-             <!--   <ul>
-                    <li>To Do List</li>
-                    <li>Chat App</li>
-                </ul>-->
-            </div>
-            <div id="spring-boot">
-         <!--       <h2 class="header2">Spring Boot</h2>
-                <ul>
-                    <li>Travel Management System (Spring Boot)</li>
-                    <li>Hotel Reservation System (Spring Boot)</li>
-                    <li>ECommerce Website with Spring Boot</li>
-                </ul>-->
-            </div>
-            <div id="react-native">
-                <h2 class="header2">React Native</h2>
-              <!--  <ul>
-                    <li>Beginner Project</li>
-                </ul>-->
-            </div>
-            <div id="my-articles">
-                <h2 class="header2">My Articles</h2>
-               <!-- <ul>
-                    <li>Article 1</li>
-                    <li>Article 2</li>
-                    <li>Article 3</li>
-                </ul>-->
-            </div>
+        <div class="fig-box">
+            <figure style="--i:3"><img alt="figma" class="img-fluid" data-id="skill-3" src="assets/image/figma.png"
+                                       style="--i:3;">
+                <figcaption>Figma</figcaption>
+            </figure>
         </div>
-        <div id="education">
-            <h1 class="header1">Education</h1>
-            <ul>
-                <li>Institute of Software Engineering</li>
-                <li>Wayamba University of Sri Lanka</li>
-                <li>G.C.E A/L</li>
-                <li>G.C.E O/L</li>
-            </ul>
+        <div class="fig-box">
+            <figure style="--i:4"><img alt="html" class="img-fluid" data-id="skill-4" src="assets/image/html.png"
+                                       style="--i:4;">
+                <figcaption>HTML</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:5"><img alt="css" class="img-fluid" data-id="skill-5" src="assets/image/css.png"
+                                       style="--i:5;">
+                <figcaption>CSS</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:6"><img alt="js" class="img-fluid" data-id="skill-6" src="assets/image/js.png"
+                                       style="--i:6;">
+                <figcaption>JS</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:7"><img alt="bootstrap" class="img-fluid" data-id="skill-7"
+                                       src="assets/image/bootstrap.png" style="--i:7;">
+                <figcaption>Bootstrap</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:8"><img alt="typescript" class="img-fluid" data-id="skill-8"
+                                       src="assets/image/typescript.png" style="--i:8;">
+                <figcaption>Typescript</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:9"><img alt="tailwind-css" class="img-fluid" data-id="skill-9"
+                                       src="assets/image/tailwind-css.png" style="--i:9;">
+                <figcaption>Tailwind css</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:10"><img alt="node js" class="img-fluid" data-id="skill-10"
+                                        src="assets/image/nodejs.png" style="--i:10;">
+                <figcaption>Node JS</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:11"><img alt="spring" class="img-fluid"
+                                        data-id="skill-11" src="assets/image/spring-framework.png" style="--i:11;">
+                <figcaption>Spring</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:12"><img alt="spring boot" class="img-fluid"
+                                        data-id="skill-12" src="assets/image/spring-boot.png" style="--i:12;">
+                <figcaption>SpringBoot</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:13"><img alt="react" class="img-fluid" data-id="skill-13"
+                                        src="assets/image/react.png" style="--i:13;">
+                <figcaption>React</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:14"><img alt="express js" class="img-fluid" data-id="skill-14"
+                                        src="assets/image/expressjs.png" style="--i:14;">
+                <figcaption>ExpressJS</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:15">
+                <img alt="next js" class="img-fluid" data-id="skill-15" src="assets/image/nextjs.png"
+                     style="--i:15;">
+                <figcaption>Next JS</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:16"><img alt="mongo db" class="img-fluid" data-id="skill-16"
+                                        src="assets/image/mongodb.png" style="--i:16;">
+                <figcaption>MongoDB</figcaption>
+            </figure>
+        </div>
+        <div class="fig-box">
+            <figure style="--i:17"><img alt="hibernate" class="img-fluid"
+                                        data-id="skill-17" src="assets/image/hibernate.png"
+                                        style="--i:17;">
+                <figcaption>Hibernate</figcaption>
+            </figure>
         </div>
 
-        <div id="certification">
-            <h1 class="header1">My Certifications</h1>
-            <div class="certification">
-            </div>
+        <!--  <div class="content-skill">
+              <div class="contentBx active" id="cnt1">
+                  <div class="card">
+                      <div class="box">
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt2">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt3">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt4">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="contentBx active" id="cnt5">
+                  <div class="card">
+                      <div class="box">
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt6">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt7">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt8">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="contentBx active" id="cnt9">
+                  <div class="card">
+                      <div class="box">
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt10">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt11">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt12">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="contentBx active" id="cnt13">
+                  <div class="card">
+                      <div class="box">
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt14">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt15">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt16">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="content-skill">
+                  <div class="contentBx" id="cnt17">
+                      <div class="card">
+                          <div class="box">
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>-->
+    </div>
+</section>
+<section id="offers">
+    <div class="offers-text">
+        <h1 class="heading" data-aos="fade-down">My Offers</h1>
+    </div>
+    <div class="offers-container">
+        <div class="box" data-aos="flip-up">
+            <img alt="" src="assets/image/web.jpg" srcset="">
+            <h3>Web Application Development</h3>
         </div>
-        <div id="interests">
-            <h1 class="header1">My Interests</h1>
-            <div id="my-routine"></div>
+        <div class="box" data-aos="flip-up">
+            <img alt="" src="assets/image/etp.jpg" srcset="">
+            <h3>Enterprise Level Application Development</h3>
+        </div>
+        <div class="box" data-aos="flip-up">
+            <img alt="" src="assets/image/etp2.jpeg" srcset="">
+            <h3>UI/ UX Design</h3>
+        </div>
+        <div class="box" data-aos="flip-up">
+            <img alt="" src="assets/image/etp3.png" srcset="">
+            <h3>Writing Articles</h3>
         </div>
     </div>
 </section>
-<footer id="foot-note">
-    <ul>
-        <li><i class="fa-brands fa-square-whatsapp"></i>0711948806</li>
-        <li><i class="fa-solid fa-square-envelope"></i>eshani9544@gmail.com</li>
-        <li><i class="fa-brands fa-linkedin"></i>www.linkedin.com/in/shihara-kaumadi</li>
-        <li><i class="fa-brands fa-square-github"></i>https://github.com/ShiharaKaumadi</li>
-        <li><i class="fa-brands fa-medium"></i>https://medium.com/@shihara-kaumadi</li>
-    </ul>
-    <div>
-        <p id="copyright">©Shihara Kaumadi 2024.</p>
+<section class="portfolio" id="portfolio">
+    <div class="heading">
+        <h1 data-aos="fade-down">Portfolio</h1>
     </div>
-</footer>
-<!--You have to run this on live server-->
-<!--npm install -g live-server-->
-<!--live-server-->
+    <div class="portfolio-content">
+        <div class="portfolio-box" data-aos="zoom-in-down">
+            <h2>Budget Corner Inventory Management System</h2>
+            <p>Storekeeper can issue a MRN for request Materials. After receiving the goods,
+                storekeeper check the items and issue a GRN to Manager.
+                If an authorized person requested for items storekeeper should issue a MIN and to
+                use that Manager should approve the MIN.
+            </p>
+            <img alt="" src="assets/image/etp.jpg">
+            <a href="https://github.com/ShiharaKaumadi/InventoryManagementSystem.git">View Work</a>
+        </div>
+        <div class="portfolio-box" data-aos="zoom-in-down">
+            <h2>Chat App</h2>
+            <p>This application contains client side and server-side.
+                Server listens for incoming client connections on the given port.
+                Client-Side Implementation allows sending messages and files to the server
+                and receiving messages and files from the server.
+                The server continues running and accepting new client connections until the
+                server socket is closed.</p>
+            <img alt="" src="assets/image/etp2.jpeg">
+            <a href="https://github.com/ShiharaKaumadi/Chat_Application.git">View Work</a>
+        </div>
+        <div class="portfolio-box" data-aos="zoom-in-down">
+            <h2>D24 Hostel Management System</h2>
+            <p>Hostel Management System
+                Student can visit to the hostel and request specific room type. If the
+                requested type is available student can register in Hostel Management
+                System. The System was built by layered Architecture with Hibernate ORM
+                Framework.</p>
+            <img alt="" src="assets/image/developer.png">
+            <a href="https://github.com/ShiharaKaumadi/HMS.git">View Work</a>
+        </div>
+        <div class="portfolio-box" data-aos="zoom-in-down">
+            <h2>Web Projects</h2>
+            <p>Collection of simple web tasks upto website with HTML, CSS, JS, Bootstrap</p>
+            <img alt="" src="assets/image/web.jpg">
+            <a href="https://shiharakaumadi.github.io/Pet-Project/">View Work</a>
+        </div>
+        <div class="portfolio-box" data-aos="zoom-in-down">
+            <h2>Spring Projects</h2>
+            <p>The back end was developed by spring boot, spring web MVC, MySQL
+                It has several services: travel package service, user service, admin service,
+                guide service, vehicle service, and hotel service.</p>
+            <img alt="" src="assets/image/etp3.png">
+            <a href="https://github.com/ShiharaKaumadi/NTPS.git">View Work</a>
+        </div>
+        <div class="portfolio-box" data-aos="zoom-in-down">
+            <h2>React Project</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum eius exercitationem iure libero,
+                minima quis rerum sapiente sit veritatis? Cumque delectus earum excepturi saepe.</p>
+            <img alt="" src="assets/image/developer.png">
+        </div>
+
+    </div>
+</section>
+<section class="education-section" id="education">
+    <h2 class="about" data-aos="fade-down">Education</h2>
+    <div class="timeline" data-aos="zoom-in-up">
+        <div class="timeline__event  animated fadeInUp delay-4s timeline__event--type1">
+            <div class="timeline__event__icon ">
+                <i class="fa-solid fa-school" style="color: #848a94;"></i>
+
+            </div>
+            <div class="timeline__event__date">
+                2022
+            </div>
+            <div class="timeline__event__content ">
+                <div class="timeline__event__title">
+                    BSc Software Engineering
+                </div>
+                <div class="timeline__event__description">
+                    <p>Institute of Software Engineering (IJSE)</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp delay-3s timeline__event--type3">
+            <div class="timeline__event__icon">
+                <i class="fa-solid fa-school" style="color: #848a94;"></i>
+
+            </div>
+            <div class="timeline__event__date">
+                2017
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    BSc Applied Sciences
+                </div>
+                <div class="timeline__event__description">
+                    <p>Wayamba University of Sri Lanka</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div class="timeline__event__icon">
+                <i class="fa-solid fa-school" style="color: #848a94;"></i>
+
+            </div>
+            <div class="timeline__event__date">
+                2016
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    CAIT
+                </div>
+                <div class="timeline__event__description">
+                    <p>Sri Lanka Telecom Training Center</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div class="timeline__event__icon">
+                <i class="fa-solid fa-school" style="color: #848a94;"></i>
+
+            </div>
+            <div class="timeline__event__date">
+                2014
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    G.C.E. A/L
+                </div>
+                <div class="timeline__event__description">
+                    <p>Sri Sumangala Girls' School</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp timeline__event--type1">
+            <div class="timeline__event__icon">
+                <i class="fa-solid fa-school" style="color: #848a94;"></i>
+
+            </div>
+            <div class="timeline__event__date">
+                2011
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    G.C.E. O/L
+                </div>
+                <div class="timeline__event__description">
+                    <p>St. Johns Girls' School</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer" id="footer">
+    <div class="footer-box">
+        <h2>Eshani Shihara</h2>
+        <p>&copy;2024 All rights reserved</p>
+        <div class="social">
+            <i class="fa-brands fa-linkedin"></i><a href="http://www.linkedin.com/in/shihara-kaumadi"></a>
+            <i class="fa-solid fa-envelope"></i><a href="eshani9544@gmail.com"></a>
+            <i class="fa-brands fa-whatsapp"></i><a href=""></a>
+            <i class="fa-solid fa-phone"></i><a href=""></a>
+            <i class="fa-brands fa-medium"></i><a href="https://medium.com/@shihara-kaumadi"></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3 class="content">Portfolio</h3>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#offers">offers</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#education">education</a></li>
+    </div>
+    <div class="footer-box">
+        <h3 class="content">Offers</h3>
+        <li><a href="#offers">Web Applications</a></li>
+        <li><a href="#offers">Spring</a></li>
+        <li><a href="#offers">UI/UX</a></li>
+        <li><a href="#offers">Articles</a></li>
+
+    </div>
+    <div class="footer-box">
+        <h3 class="contact">Contact Me</h3>
+        <li><i class="fa-solid fa-envelope"></i><a href="eshani9544@gmail.com">eshani9544@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="">+94 703092361</a></li>
+        <li><i class="fa-brands fa-github"></i><a href="https://github.com/ShiharaKaumadi">Shihara Kaumadi</a></li>
+        <li><i class="fa-brands fa-linkedin"></i><a href="http://www.linkedin.com/in/shihara-kaumadi">Shihara Kaumadi</a></li>
+        <li><i class="fa-brands fa-medium"></i><a href="https://medium.com/@shihara-kaumadi">Shihara Kaumadi</a></li>
+
+    </div>
+
+
+</section>
+<script src="js/script.js"></script>
 <script src="particles.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/jquery.min.js"></script>
@@ -453,5 +595,6 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
 
 </script>
+
 </body>
 </html>
