@@ -408,7 +408,7 @@ header #navbar li a{
 }
 #offers .offers-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(18rem,auto)) ;
+    grid-template-columns:repeat(auto-fit,minmax(15rem,auto)) ;
     gap:1.5rem;
     margin-top:2rem;
     place-content: center;
@@ -421,13 +421,13 @@ header #navbar li a{
     flex-direction: column;
     justify-content: center;
     padding: 10px 10px;
-    width:280px;
+    width:250px;
     border-radius: 15px;
     border:2px solid black;
 }
 #offers .offers-container .box img{
     width:100%;
-    height:250px;
+    height:220px;
     object-fit: contain;
     object-position: center;
     border-radius: 15px;
@@ -467,11 +467,9 @@ header #navbar li a{
 
 }
 #portfolio .portfolio-content .portfolio-box{
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     padding: 10px 10px;
     width:280px;
     border-radius: 15px;
@@ -500,26 +498,29 @@ header #navbar li a{
 }
 #portfolio .portfolio-content .portfolio-box a{
     padding: 10px 25px;
-    border:1px solid black;
+    border:1px solid #272eb4;
     border-radius: 15px;
     text-decoration: none;
     color:white;
-    background-color: black;
+    width: 150px;
+    background-color: #272eb4;
     cursor: pointer;
     font-size: 18px;
     font-weight: normal;
-    align-items: center;
+    margin-bottom: 3px;
+    align-content: center;
+    justify-items: center;
     background-position: center;
     font-family: "Poppins",sans-serif;
 }
 #portfolio .portfolio-content .portfolio-box img{
-    width:60px;
-    height:60px;
+    width:250px;
+    height:200px;
     object-fit: cover;
-    border-radius: 50%;
-    padding: 8px 8px;
+    padding: 2px 2px;
 
 }
+
 
 .education-section .about {
     font-family: "Tilt Neon",sans-serif;
